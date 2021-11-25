@@ -3,4 +3,4 @@
 
 ##### I tried to make a responsive design and added a burger menu.
 
-https://betabart.github.io/Hello-its-me/
+https://betabart.github.io/my_cv/
