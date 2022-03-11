@@ -4,158 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c7bf1486db.js" crossorigin="anonymous"></script>
     <title>Natallia Haurylenka</title>
 </head>
 
 <body>
-    <div class="cv_wrapper">
-        <nav class="navbar">
-            <ul class="nav-ul">
-                <li class="nav-element"><a href="#">Home</a></li>
-                <li class="nav-element"><a href="#skills">Skills</a></li>
-                <li class="nav-element"><a href="#language">Languages</a></li>
-                <li class="nav-element"><a href="#education">Education</a></li>
-                <li class="nav-element"><a href="#about">About</a></li>
-                <li class="nav-element"><a href="#code_ex">Code Example</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div class="img_container">
-                <div class="photo_wrapper">
-                    <img src="images/IMG_20201218_142321_171.jpg" alt="cv_photo">
-                </div>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="#">Home</a></li>
+            <li class="navigation__item"><a href="#skills">Skills</a></li>
+            <li class="navigation__item"><a href="#language">Languages</a></li>
+            <li class="navigation__item"><a href="#education">Education</a></li>
+            <li class="navigation__item"><a href="#about">About me</a></li>
+            <li class="navigation__item"><a href="#code">Code Example</a></li>
+            <li class="navigation__item"><a href="#projects">My Projects</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__photo-container">
+                <img class="header__img" src="./assets/IMG_20201218_142321_171.jpg" alt="profile-photo">
                 <div class="hamburger">
                     <div class="line line_1"></div>
                     <div class="line line_2"></div>
                     <div class="line line_3"></div>
                 </div>
             </div>
-            <div class="profile">
-                <section class="name">
-                    <h2>Natallia Haurylenka</h2>
-                    <h2 class="job">Junior Frontend Developer</h2>
-                </section>
-                <section class="contacts">
-                    <h3 class="title">Contacts</h3>
-                    <ul>
-                        <li>
-                            <span class="icon"><i class="fas fa-phone-alt"></i></span>
-                            <span class="text_contacts"><a href="tel:+48731669824"
-                                    target="_blank">+48731669824</a></span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fas fa-envelope"></i></span>
-                            <span class="text_contacts"><a href="mailto:velvet.batasha@gmail.com"
-                                    target="_blank">velvet.batasha@gmail.com</a></span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fab fa-telegram-plane"></i></span>
-                            <span class="text_contacts">@BetaBart</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fab fa-linkedin-in"></i></span>
-                            <a href="https://www.linkedin.com/in/natallia-haurylenka-73b793209/"
-                                target="_blank">LinkedIn</a>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                            <span class="text_contacts"><a
-                                    href="https://www.google.com/maps/place/%D0%92%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2/@51.1095047,17.0327276,3a,75y,283.22h,104.21t/data=!3m8!1e1!3m6!1sAF1QipPjzMJAHE6FGK6E_TFiop9Hfa2mpT4ngZejL_ZV!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPjzMJAHE6FGK6E_TFiop9Hfa2mpT4ngZejL_ZV%3Dw203-h100-k-no-pi-23.733583-ya76.89987-ro-0-fo100!7i8000!8i4000!4m7!3m6!1s0x470fe9c2d4b58abf:0xb70956aec205e0f5!8m2!3d51.1078852!4d17.0385376!14m1!1BCgIgARICCAI"
-                                    target=" _blank" class="welcome__button">Wroclaw,
-                                    Poland</a></span>
-                        </li>
+            <section class="header__profile">
+                <h1 class="header__name">Natallia Haurylenka</h1>
+                <h2 class="header__job-name">Junior Frontend Developer</h2>
+            </section>
+            <section class="header__contacts">
+                <h3 class="header__contacts-heading section__heading">Contacts</h3>
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <span class="header__icon"><i class="fas fa-phone-alt"></i></span>
+                        <span class="header__contacts-text"><a href="tel:+48731669824"
+                                target="_blank">+48731669824</a></span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="header__icon"><i class="fas fa-envelope"></i></span>
+                        <span class="header__contacts-text"><a href="mailto:velvet.batasha@gmail.com"
+                                target="_blank">velvet.batasha@gmail.com</a></span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="icon"><i class="fab fa-telegram-plane"></i></span>
+                        <span class="text_contacts">@BetaBart</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="icon"><i class="fab fa-linkedin-in"></i></span>
+                        <a href="https://www.linkedin.com/in/natallia-haurylenka-73b793209/"
+                            target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="icon"><i class="fa-brands fa-discord"></i></span>
+                        <span class="text_contacts">Netka(@BetaBart)</span>
+                    </li>
+                    <li class="header__contacts-item">
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text_contacts"><a
+                                href="https://www.google.com/maps/place/%D0%92%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2/@51.1095047,17.0327276,3a,75y,283.22h,104.21t/data=!3m8!1e1!3m6!1sAF1QipPjzMJAHE6FGK6E_TFiop9Hfa2mpT4ngZejL_ZV!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPjzMJAHE6FGK6E_TFiop9Hfa2mpT4ngZejL_ZV%3Dw203-h100-k-no-pi-23.733583-ya76.89987-ro-0-fo100!7i8000!8i4000!4m7!3m6!1s0x470fe9c2d4b58abf:0xb70956aec205e0f5!8m2!3d51.1078852!4d17.0385376!14m1!1BCgIgARICCAI"
+                                target=" _blank" class="welcome__button">Wrocław,
+                                Poland</a></span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main__container">
+            <aside class="main__left-side">
+                <section class="section section_skills">
+                    <h3 class="section__heading">Skills</h3>
+                    <ul class="section__list">
+                        <li class="section__item">JavaScript/ES6</li>
+                        <li class="section__item">HTML5</li>
+                        <li class="section__item">CSS3</li>
+                        <li class="section__item">Git/GitHub</li>
+                        <li class="section__item">React</li>
+                        <li class="section__item">BEM</li>
+                        <li class="section__item">Googling</li>
+                        <li class="section__item">Java</li>
+                        <li class="section__item">VSCode</li>
                     </ul>
+                </section>
+                <section class="section section_languages">
+                    <h3 class="section__heading">Languages</h3>
+                    <ul class="section__list">
+                        <li class="section__item">English - B1</li>
+                        <li class="section__item">Belarussian - fluent</li>
+                        <li class="section__item">Russian - fluent</li>
+                        <li class="section__item">Polish - B2</li>
+                    </ul>
+                </section>
+                <section class="section section_education">
+                    <h3 class="section__heading">Education</h3>
+                    <ul class="section__list">
+                        <li class="section__item">Belarusian State Pedagogical University named after Maxim Tank</li>
+                        <li class="section__item"><a
+                                href="https://www.codecademy.com/profiles/natalliaHaurylenka4588648921/certificates/9a5bb1fc45b4281af1fffec93b0aaf05"
+                                target="_blank">Codecademy Learn CSS Course</a></li>
+                        <li class="section__item"><a
+                                href="https://www.codecademy.com/profiles/natalliaHaurylenka4588648921/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7"
+                                target="_blank">Codecademy Learn HTML Course</a></li>
+                        <li class="section__item"><a href="https://itgid.info/course/javascript-2"
+                                target="_blank">JavaScript v.2.0</a></li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="main__right-side">
+                <section class="section section_about">
+                    <h3 class="section__heading">About me</h3>
+                    <p class="section__text">I’ve started my way into programming and algorithms with Java. It doesn’t
+                        mean
+                        that I’m a pro in the
+                        back-end. It just means that I understand the Java syntax and OOP.</p><br>
+                    <p class="section__text">I’ve always been good at math but my way of Frontend was very implemented.
+                    </p>
+                    <br>
+                    <p class="section__text">I’m interested in Architecture and Art. I understand something in Civil
+                        engineering and Renovation.
+                        Also, I have good teaching skills (I think so) and sometimes I’m in the spotlight. Because I
+                        like to
+                        connect with people, make jokes and be a serious person at the same time..</p>
+                    <p class="section__text">So if you read it welcome to my Universe. And nice to meet you, friend =)
+                    </p>
+                </section>
+
+
+                <section class="section section_code">
+                    <h3 class="section__heading">Code Example</h3>
+                    <p class="section__text"><i>Array.prototype.length</i> will give you the number of top-level
+                        elements in an
+                        Your task is to create a function deepCount that returns the number of ALL
+                        elements within an array, including any within inner-level arrays. <br>
+                    </p>
+                    <p class="section__code-example">
+                        <code>
+                            For example: <br>
+        
+                            deepCount([1, 2, 3]);  //>>>>> 3 <br>
+                            deepCount(["x", "y", ["z"]]);   //>>>>> 4 <br>
+                            deepCount([1, 2, [3, 4, [5]]]);   //>>>>> 7 <br>
+                        </code>
+                    </p>
+
+                    The input will always be an array.
+                            <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(251, 241, 199); color: rgb(60, 56, 54); border-radius: 20px;">                       <span class="hljs-function" style="color: rgb(66, 123, 88);"><span class="hljs-keyword" style="color: rgb(66, 123, 88);">function</span> <span class="hljs-title" style="color: rgb(7, 102, 120);">deepCount</span>(<span class="hljs-params" style="color: rgb(181, 118, 20);">a</span>)</span>{
+                            <span class="hljs-keyword" style="color: rgb(157, 0, 6);">let</span> sum = a.length;
+                                a.forEach(el =&gt; {
+                                    <span class="hljs-keyword" style="color: rgb(157, 0, 6);">if</span>(<span class="hljs-built_in" style="color: rgb(7, 102, 120);">Array</span>.isArray(el)) {
+                                        sum += deepCount(el);
+                                    }
+                                });
+                            <span class="hljs-keyword" style="color: rgb(157, 0, 6);">return</span> sum;
+                        }</pre>
                 </section>
             </div>
-        </header>
-        <main>
-            <div class="left_side">
-                <section class="section_main skills" id="skills">
-                    <h3 class="title">Skills</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Git / GitHub</li>
-                        <li>BEM</li>
-                        <li>VSCode</li>
-                        <li>Googling</li>
-                    </ul>
-                </section>
-                <section class="section_main language" id="language">
-                    <h3 class="title">Languages</h3>
-                    <ul>
-                        <li>English - B1</li>
-                        <li>Belarussian</li>
-                        <li>Russian</li>
-                        <li>Polish - B1</li>
-                    </ul>
-                </section>
-                <section class="section_main education" id="education">
-                    <h3 class="title">Education</h3>
-                    <ul>
-                        <li>
-                            <p>Belarusian State Pedagogical University named after Maxim Tank</p>
-                        </li>
-                        <li><a href="https://www.codecademy.com/profiles/natalliaHaurylenka4588648921/certificates/9a5bb1fc45b4281af1fffec93b0aaf05"
-                                target="_blank">Codecademy Learn CSS Course</a>
-                        </li>
-                        <li><a href="https://www.codecademy.com/profiles/natalliaHaurylenka4588648921/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7"
-                                target="_blank">Codecademy Learn HTML Course</a>
-                        </li>
-                    </ul>
-                </section>
-            </div> <!-- END OF LEFT_SIDE -->
-            <div class="right_side">
-                <section class="section_main about" id="about">
-                    <h3 class="title">About Me</h3>
-                    <p>I started my way into programming at the end of 2019, and it wasn’t JavaScript.
-                        I have studied Java on the Javarush platform and was delighted with what I was doing.</p><br>
-                    <p>After a while, I realized that something is wrong and I don’t see the result, just learning,
-                        learning and learning. So I decided to change my path a bit.</p><br>
-                    <p>I saw the RSSchool course preview. And I thought that this is what I was looking for!
-                        Two weeks for the basis of JS and here I am.</p>
-                </section>
-                <section class="section_main code" id="code_ex">
-                    <h3 class="title">Code Example</h3>
-                    <p>Implement a function that receives a string, and lets you extend it with repeated calls. When no
-                        argument is passed you should return a string consisting of space-separated words you've
-                        received earlier.</p><br>
-                    <p>Note: there will always be at least 1 string; all inputs will be non-empty.</p>
-                    <p>For example:</p>
-                    <p class="example_message">
-                        <code>createMessage("Hello")("World!")("how")("are")("you?")() === "Hello World! how are you?"</code>
-                    </p>
-                    <pre><code>
-function createMessage(n) {
-    return function(m){
-        return m ? createMessage(n + '' + m) : n; 
-    }
-}</code></pre>
-                </section>
-            </div> <!-- END OF RIGHT_SIDE -->
-        </main>
-        <footer>
-            <ul>
-                <li>
-                    <h4>2021</h4>
-                </li>
-                <li>
-                    <a href="https://github.com/BetaBart" target="_blank"><i class="fab fa-github-square"></i>My
-                        GitHub</a>
-                </li>
-            </ul>
-        </footer>
-    </div> <!-- END OF CV_WRAPPER -->
+            <section class="section section_projects">
+                <h3 class="section__heading">My projects</h3>
+                <div class="projects">
+                    <div class="project">
+                        <img class="project__img" src="./assets/sorter.jpg" alt="sorter waste game">
+                        <div class="project__description">
+                            <h4 class="project__name">Sorter Game</h4>
+                            <p class="project__technologies">HTML CSS JS</p>
+                            <a class="project__link" href="https://betabart.github.io/segregation/" target="_blank" rel="noopener noreferrer">Open!</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project__img" src="./assets/weather.jpg" alt="weather api">
+                        <div class="project__description">
+                            <h4 class="project__name">Weather App</h4>
+                            <p class="project__technologies">HTML CSS JS</p>
+                            <a class="project__link" href="https://betabart.github.io/weather-app/" target="_blank" rel="noopener noreferrer">Open!</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project__img" src="./assets/pets.jpg" alt="pet projects">
+                        <div class="project__description">
+                            <h4 class="project__name">Mini pet-projects</h4>
+                            <p class="project__technologies">HTML CSS JS</p>
+                            <a class="project__link" href="https://betabart.github.io/50-Projects-50-Days/" target="_blank" rel="noopener noreferrer">Open!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__year">2022</div>
+            <div class="footer__github"><a href="https://github.com/BetaBart" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-github"></i>My GitHub</a></div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
